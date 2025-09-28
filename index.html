@@ -26,7 +26,7 @@
             font-size: 40px;
       }**/
 
-      .boxmodel{
+     /** .boxmodel{
         background-color: aqua;
         padding: 10px;
         border: 20px solid black;
@@ -36,7 +36,7 @@
         width: 300px;
         height: 300px;
         border-radius: 100%;
-      }
+      }**/
     </style>
 </head>
 <body>
@@ -72,7 +72,7 @@
             Div 3
          </div> -->
 
-    <main>
+    <!-- <main>
         <div class="boxmodel">
             <p>This is the content</p>
         </div>
@@ -83,6 +83,66 @@
         <img class="img" src="html.jpg" />
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/NIAkEJp8i_Y?si=wmMuk2CzJvvc8A7G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </main>
+    </main> -->
+
+    <input type="number" placeholder="first number" id="num1"/>
+    <input type="number" placeholder="second number" id="num2"/>
+    <input type="email" placeholder="email" id="email"/>
+    <button onclick="processor()">Process</button>
+
+    F = (°C × 9/5) + 32
+    
+<script>
+    function processor(){
+        let email=document.getElementById("email").value;
+        console.log(email);
+
+        let num1=document.getElementById("num1").value;
+        let num2=document.getElementById("num2").value;
+        let result=parseFloat(num1)+parseFloat(num2);
+        
+        //console.log(result);
+    }
+
+    // let firstname="James";
+   //  let lastname="Carter";
+
+   //  const address="Davao";
+
+   //  firstname="Kile";
+   //  lastname="Smith";
+    
+   //  address="Leyte";
+
+   //  console.log(firstname);
+   //  console.log(lastname);
+   //  console.log(address) 
+//let name="James";
+//let number=23.3;
+//let is_true=true;
+//let empFile=null;
+//let not_assinged;
+//let obj=[{"name":"James","lastname":"Carter"}]
+//let arr=["James","Carter","Davao"];
+        // 0 ,     1,      2
+//console.log(arr[3]);
+// +, -, /, *
+//let first_number="James";
+//let second_number=3;
+
+// <, >, <=, >=, !, != 
+
+// && -> generate the result true if the two statement is true, False otherwise
+// || -> generate the result true if the statement has true, false if all statement is false
+
+//if(first_number != second_number){
+  //  console.log("true");
+//}else{
+  //  console.log("False");
+//}
+
+
+</script>
+
 </body>
 </html>
