@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <style>
         /**div {
             color:red;
@@ -85,15 +87,89 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/NIAkEJp8i_Y?si=wmMuk2CzJvvc8A7G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </main> -->
 
-    <input type="number" placeholder="first number" id="num1"/>
-    <input type="number" placeholder="second number" id="num2"/>
-    <input type="email" placeholder="email" id="email"/>
-    <button onclick="processor()">Process</button>
+    <div class="col-lg-4 items-center text-center">
+      <h1>Grade Calculator</h1>
+      <input class="form-control mt-2" type="number" placeholder="Project" id="project"/>
+      <input class="form-control mt-2" type="number" placeholder="Quiz" id="quiz"/>
+      <input class="form-control mt-2" type="number" placeholder="Midterm" id="midterm"/>
+      <input  class="form-control mt-2" type="number" placeholder="Finals" id="finals"/>
+      <input class="form-control mt-2" type="number" placeholder="activities" id="activities"/>
+      Average: <span class="badge badge-primary mt-2 text-black" id="average"></span><br>
+      Remarks: <span class="badge badge-primary mt-2 text-black" id="remarks"></span><br>
+      <button  class="btn btn-primary mt-2" onclick="calculateGrade()">Calculate Grade</button>
 
-    F = (°C × 9/5) + 32
+    </div>  
     
-<script>
-    function processor(){
+   
+    
+
+<script src="js/gradeCalculator.js"></script> 
+<script src="js/loops.js"></script>    
+<script>                                             //[6.0],[6.1],[6.2],[6.3] 
+                                                                         //[6.3.0],[6.3.1],[6.3.2] 
+                                                                                                      //[6.3.3]  
+                                                                                                    //[6.3.3.0],[6.3.3.1], [6.3.3.2]   
+let data=["James","Carl","Richard","Maria",2,false,["kile","Girl","Boy",["ormoc","tacloban","maasin",["phone","iphone","android"]]],5.9];
+          //0,   1,      2,          3,    4,  5,    6,       7 
+datamap(data);
+
+//foreachloop(data);
+          //console.log(data[6][3][3][2]);
+//data.push("Condes","Netflix");
+//data.pop();
+//console.log(data);
+
+ // forloop();
+ //whileloop();
+ //forofloop();
+  // OR || -> returns true if one operand has true
+  // AND && -> return true if two operands are true 
+
+  if(myUsername=="userName123"){
+    //console.log("Username "+true);
+  }
+  else if(password=="password1233"){
+    //console.log("Password 1233 "+true);
+  }
+  else if(password=="password123"){
+    //console.log("Password 123 "+true);
+  }else{
+    //console.log(false);
+  }
+ let num=10;
+
+  switch(num){
+
+    case 1: 
+      console.log("Monday"); 
+    break;
+
+    case 2: 
+      console.log("Tuesday"); 
+    break;
+
+    case 3: 
+      console.log("Wednesday"); 
+    break;
+
+    case 4: 
+      console.log("Thursday"); 
+    break;
+
+    case 5: 
+      console.log("Friday"); 
+    break;
+
+    case 6: 
+      console.log("Saturday"); 
+    break;
+
+    default: 
+          console.log("Sunday"); 
+    }
+
+
+  function processor(){
         let email=document.getElementById("email").value;
         console.log(email);
 
@@ -103,6 +179,38 @@
         
         //console.log(result);
     }
+    // function with parameters
+    function sampleFunction(name, age, bdate){
+      console.log(name);
+      console.log(age);
+      console.log(bdate);
+    }
+
+    // funciton with return values
+    function sampleFunction2(){
+      let name="James" + myUsername;
+
+      return name;
+    }
+    
+    //console.log(sampleFunction2());
+
+ // function expression
+    const greet = function(name) {
+      return `Hello, ${name}!`;
+    };
+
+ // arrow function 
+     const greeting = (name) => {
+       console.log(name); 
+     };
+    //greeting("Maria");
+    //console.log(); 
+
+    //console.log(greet("James"));
+    //console.log(sampleFunction2());
+    //sampleFunction("James","20","2020-5-6");
+    
 
     // let firstname="James";
    //  let lastname="Carter";
