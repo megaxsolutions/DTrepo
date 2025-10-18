@@ -87,7 +87,7 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/NIAkEJp8i_Y?si=wmMuk2CzJvvc8A7G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </main> -->
 
-    <div class="col-lg-4 items-center text-center">
+    <!-- <div class="col-lg-4 items-center text-center">
       <h1>Grade Calculator</h1>
       <input class="form-control mt-2" type="number" placeholder="Project" id="project"/>
       <input class="form-control mt-2" type="number" placeholder="Quiz" id="quiz"/>
@@ -98,20 +98,162 @@
       Remarks: <span class="badge badge-primary mt-2 text-black" id="remarks"></span><br>
       <button  class="btn btn-primary mt-2" onclick="calculateGrade()">Calculate Grade</button>
 
-    </div>  
+    </div>   -->
     
    
     
 
 <script src="js/gradeCalculator.js"></script> 
-<script src="js/loops.js"></script>    
-<script>                                             //[6.0],[6.1],[6.2],[6.3] 
-                                                                         //[6.3.0],[6.3.1],[6.3.2] 
-                                                                                                      //[6.3.3]  
-                                                                                                    //[6.3.3.0],[6.3.3.1], [6.3.3.2]   
-let data=["James","Carl","Richard","Maria",2,false,["kile","Girl","Boy",["ormoc","tacloban","maasin",["phone","iphone","android"]]],5.9];
+<script src="js/loops.js"></script>   
+<script src="js/objects.js"></script> 
+<script>
+function createGreeting(name) {
+  return function() {
+    console.log("Hello, " + name);
+  };
+}
+
+const greetJohn = createGreeting("John");
+const greetJames = createGreeting("James");
+greetJohn();
+greetJohn();
+
+greetJames();
+greetJames();
+
+
+
+//function makeMultiplier(factor) {
+  //return function(num) {
+    //return num * factor;
+  //};
+//}
+
+//const double = makeMultiplier(2);
+//const triple = makeMultiplier(3);
+//const fourth = makeMultiplier(4);
+//const fifth= makeMultiplier(5);
+
+//console.log(double(5)); // 10
+//console.log(triple(5)); // 15
+//console.log(fourth(5));
+//console.log(fifth(5));
+
+//function outer() {
+  //let counter = 0;
+
+  //function inner() {
+    //counter++;
+    //console.log(counter);
+  //}
+
+  //return inner;
+//}
+
+//const count = outer(); 
+//for(let i=1; i<=100; i++){
+  //count();
+//}
+
+
+//const execute=function(){
+  //console.log("Executed!");
+//}
+
+//execute();
+//function execute(){
+  //console.log("Executed!");
+//}
+//execute();
+
+
+   // tdz
+ // let name="james";
+  //console.log(name);
+
+  //console.log(name); // undefined
+  //var name = "Alice";
+  //console.log(name); // Alice
+
+
+  //{ 
+    //let name="James";
+    //console.log(name);
+  //}
+  //console.log(name);
+
+//let x = 10;
+//if (true) {
+  //let x = 20;
+  //console.log("Inside block:", x);
+//}
+//console.log("Outside block:", x);
+
+
+  //function sampleFunction(){
+    //let str="I am in the function";
+    //console.log(str);
+    //console.log(globalVar);
+  //}
+  //sampleFunction();
+  //console.log(str);
+  //sampleFunction();
+  //console.log(globalVar);    
+  //[6.0],[6.1],[6.2],[6.3] 
+//const user = { name: "Ana", age: 25, country: "PH" };
+//const { name, age, country } = user;
+//console.log(name, age , country); // Ana 25
+
+//const fruits = ["apple", "banana"];
+//const moreFruits = [...fruits, "mango"];
+//console.log(moreFruits); // ["apple", "banana", "mango"]
+
+//const user1 = { name: "Carlos" };
+//const user2 = { age: 30 };
+//const merged = { ...user1, ...user2 };
+//console.log(merged); // { name: "Carlos", age: 30 }
+
+//rest operator inside argument
+//function sum(...numbers) {
+  //return numbers.reduce((a, b) => a + b, 0);
+//}
+//console.log(sum(1, 2, 3, 4,10,12,12,12,12,12,78)); // 10
+
+
+//const colors = ["red", "green", "blue"];
+//const [first, second, third] = colors;
+//console.log(first, second, third);
+
+  //const user1 = new Person2("Carla", 22, 'Manila');
+//const multi = new Person2();
+//const add = new Person2();
+
+//user1.greet();
+//multi.multiply();
+//add.addition();
+
+ //const product = "Laptop";
+//const price = 50000;
+//const message=`The ${product} costs ₱${price}.`;
+//console.log(message); -->
+
+// Hey! I’m James, 27 years old.                                                                       //[6.3.0],[6.3.1],[6.3.2] 
+ //simpleObject.greet(); 
+ //for (let key in simpleObject){
+   // console.log(`${key}: ${simpleObject[key]}`);
+ //}                                                                                                   //[6.3.3]  
+
+ 
+//const user1 = new Person("Maria", 25, "Ormoc");
+//const user2 = new Person("Alex", 30, "Tacloban");
+
+//user1.greet(); // Hi, I’m Maria and I’m 25 years old from ormoc
+//user2.greet(); // Hi, I’m Alex and I’m 30 years old from tacloban.
+
+ //[6.3.3.0],[6.3.3.1], [6.3.3.2]   
+//let data=["James","Carl","Richard","Maria",2,false,["kile","Girl","Boy",["ormoc","tacloban","maasin",["phone","iphone","android"]]],5.9];
           //0,   1,      2,          3,    4,  5,    6,       7 
-datamap(data);
+//datamap(data);
 
 //foreachloop(data);
           //console.log(data[6][3][3][2]);
@@ -124,7 +266,8 @@ datamap(data);
  //forofloop();
   // OR || -> returns true if one operand has true
   // AND && -> return true if two operands are true 
-
+let myUsername;
+let password;
   if(myUsername=="userName123"){
     //console.log("Username "+true);
   }
@@ -165,7 +308,7 @@ datamap(data);
     break;
 
     default: 
-          console.log("Sunday"); 
+          //console.log("Sunday"); 
     }
 
 
@@ -180,11 +323,11 @@ datamap(data);
         //console.log(result);
     }
     // function with parameters
-    function sampleFunction(name, age, bdate){
-      console.log(name);
-      console.log(age);
-      console.log(bdate);
-    }
+    // function sampleFunction(name, age, bdate){
+     // console.log(name);
+     // console.log(age);
+     // console.log(bdate);
+    //} 
 
     // funciton with return values
     function sampleFunction2(){

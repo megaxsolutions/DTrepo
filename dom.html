@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Example</title>
+
+</head>
+<body>
+    
+
+    <!-- <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+        <li>Jackfruit</li>
+    </ul>
+    <p>This is info text1</p>
+    <p>This is info text2</p>
+    <p>This is info text3</p>
+    <p>This is info text4</p>
+    <p>This is info text5</p>
+     -->
+
+    
+    <!-- <input type="text" class="classinputField" value="Hello World class">
+    <h2 id="title">Welcome</h2>
+    <input type="text" id="inputField" value="Hello World">
+    <input type="date" id="dateField" value="2024-01-01">
+    <input type="color" id="colorField" value="#ff0000">
+    <input type="number" id="numberField" value="23"> -->
+    
+    <!-- <p id="greeting">Hi!</p> -->
+    <!-- <img id="photo" src="old.jpg" alt="Old Image"> -->
+    <div id="box">Click Me</div>
+    
+    <script>
+        const box = document.getElementById("box");
+        box.style.backgroundColor = "lightblue";
+        box.style.padding = "39px";
+        box.style.margin = "20px";
+        box.style.borderRadius = "10px";
+
+        const paragraph = document.createElement("p");
+        paragraph.textContent = "This paragraph was created using JavaScript!";
+        document.body.appendChild(paragraph);
+
+    </script>
+
+    <script>
+        const image = document.getElementById("photo");
+        image.src = "html.jpg";
+        image.alt = "New Image";
+    </script>
+
+    <script>
+    const greet = document.getElementById("greeting");
+    //greet.textContent = "Hello, World!";
+    // or
+    greet.innerHTML = "<strong>Hello, World!</strong>";
+    </script>
+
+
+    <script>
+        const listItems = document.querySelectorAll("p");
+        listItems.forEach(item => console.log(item.textContent));
+    </script>
+    <script>
+    const paragraph = document.querySelector(".info");
+    console.log(paragraph.textContent);
+
+    const classinput = document.querySelector(".classinputField");
+    console.log(classinput.value);
+    </script>
+
+    <script>
+    const heading = document.getElementById("title");
+    console.log(heading.textContent);
+    const inputvalue = document.getElementById("inputField");
+    console.log(inputvalue.value);
+    const datevalue = document.getElementById("dateField");
+    console.log(datevalue.value);
+    const colorvalue = document.getElementById("colorField");
+    console.log(colorvalue.value);
+    const numbervalue = document.getElementById("numberField");
+    console.log(numbervalue.value);
+    </script>
+
+</body>
+</html>
