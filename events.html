@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <script type="text/javascript" src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+</head>
+<body>
+    <textarea></textarea>
+
+    <!-- <video id="myVideo" controls width="300">
+        <source src="sample.mp4" type="video/mp4">
+    </video>
+
+<script>
+const video = document.getElementById("myVideo");
+video.addEventListener("play", () => console.log("Video playing"));
+video.addEventListener("ended", () => console.log("Video ended"));
+</script> -->
+
+    <!-- <form id="myForm">
+        <input type="text" id="name" placeholder="Enter your name">
+        <button type="submit">Submit</button>
+    </form> -->
+    <!-- <div id="dropZone" style="width:200px; height:100px; border:2px dashed gray;">Drop Here</div>
+
+<script>
+const dropZone = document.getElementById("dropZone");
+
+dropZone.addEventListener("dragover", (e) => e.preventDefault());
+dropZone.addEventListener("drop", () => alert("Item dropped!"));
+</script>
+
+    <script>
+    window.addEventListener("load", () => console.log("Page loaded!"));
+    window.addEventListener("resize", () => console.log("Window resized!"));
+    window.addEventListener("scroll", () => console.log("Window scroll!"));
+    </script> -->
+
+    <!-- <script>
+     $("#myForm").submit(function(e) {
+        e.preventDefault();
+              console.log("Form Submitted with name:", $("#name").val());     
+        
+        });
+
+      $("#myForm").reset(function(e) {
+        e.preventDefault();
+            console.log("Form Submitted with name:", $("#name").val());     
+        
+        });  
+    </script> -->
+    <!-- <script>
+        document.getElementById("name").addEventListener("change", (e) => {
+          console.log("Input changed to:", e.target.value);
+        });
+        document.getElementById("name").addEventListener("focus", (e) => {
+          console.log("Input changed to focus:", e.target.value);
+        });
+         document.getElementById("name").addEventListener("blur", (e) => {
+          console.log("Input changed to blur:", e.target.value);
+        });
+        </script> -->
+
+
+    <!-- <script>
+
+
+     $("#myForm").submit(function(e) {
+        e.preventDefault();
+        
+        $.ajax({
+            type: "POST",
+            url: "http://localhost/dt/receive.php", // Replace with your server URL
+            data: {
+                name: $("#name").val()
+            },
+            success: function(response) {
+                console.log(response);
+            },
+            error: function(error) {
+                console.log(error);
+
+                //alert("Error submitting form.");
+            }
+        });
+        
+     }); -->
+        
+    <!-- //document.getElementById("myForm").addEventListener("submit", (e) => {
+     // e.preventDefault(); // Prevents page reload
+    //alert("Form Submitted!");
+    //});
+    </script> -->
+
+
+    <!-- <input type="text" id="typeBox" placeholder="Type here..."> -->
+
+    <!-- <script>
+    //document.getElementById("typeBox").addEventListener("keydown", (e) => {
+    //console.log("Key down:", e.key);
+    //}); 
+
+    document.getElementById("typeBox").addEventListener("keyup", (e) => {
+    console.log("Key up:", e.key);
+    });
+    </script> -->
+
+    
+    <!-- <button id="btn">Click Me</button> -->
+
+    <!-- <script>
+    const btn = document.getElementById("btn");
+    //btn.addEventListener("click", () => {
+        //alert("Button clicked!");
+        console.log("Button was clicked");
+    //});
+    btn.addEventListener("dblclick", () => {
+        //alert("Button double-clicked!");
+        console.log("Button was double-clicked");
+    });
+    btn.addEventListener("mousedown", () => {
+        //alert("Button double-clicked!");
+        console.log("Mouse button is pressed down");
+    });
+    btn.addEventListener("mouseup", () => {
+        //alert("Button double-clicked!");
+        console.log("Mouse button is released");
+    });
+     //btn.addEventListener("mousemove", () => {
+        //alert("Button double-clicked!");
+       // console.log("Mouse is moving over the button");
+    //});
+    btn.addEventListener("mouseover", () => {
+        //alert("Button double-clicked!");
+        console.log("Mouse is over the button");
+    });
+    btn.addEventListener("mouseout", () => {
+        //alert("Button double-clicked!");
+        console.log("Mouse is out the button");
+    });
+    </script> -->
+
+</body>
+</html>
